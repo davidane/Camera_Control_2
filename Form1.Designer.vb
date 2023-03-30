@@ -33,6 +33,15 @@ Partial Class Form1
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.GimbalButton1 = New System.Windows.Forms.Button()
+        Me.GimbalButton2 = New System.Windows.Forms.Button()
+        Me.GimbalButton3 = New System.Windows.Forms.Button()
+        Me.GimbalButton4 = New System.Windows.Forms.Button()
+        Me.HomeButton = New System.Windows.Forms.Button()
+        Me.VideoOnButton = New System.Windows.Forms.Button()
+        Me.VideoOffButton = New System.Windows.Forms.Button()
+        Me.FFCButton = New System.Windows.Forms.Button()
+        Me.ResetButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'leftButton
@@ -110,11 +119,101 @@ Partial Class Form1
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Mode"
         '
+        'GimbalButton1
+        '
+        Me.GimbalButton1.Location = New System.Drawing.Point(12, 160)
+        Me.GimbalButton1.Name = "GimbalButton1"
+        Me.GimbalButton1.Size = New System.Drawing.Size(75, 23)
+        Me.GimbalButton1.TabIndex = 8
+        Me.GimbalButton1.Text = "0, -70"
+        Me.GimbalButton1.UseVisualStyleBackColor = True
+        '
+        'GimbalButton2
+        '
+        Me.GimbalButton2.Location = New System.Drawing.Point(12, 189)
+        Me.GimbalButton2.Name = "GimbalButton2"
+        Me.GimbalButton2.Size = New System.Drawing.Size(75, 23)
+        Me.GimbalButton2.TabIndex = 9
+        Me.GimbalButton2.Text = "180, 70"
+        Me.GimbalButton2.UseVisualStyleBackColor = True
+        '
+        'GimbalButton3
+        '
+        Me.GimbalButton3.Location = New System.Drawing.Point(12, 218)
+        Me.GimbalButton3.Name = "GimbalButton3"
+        Me.GimbalButton3.Size = New System.Drawing.Size(75, 23)
+        Me.GimbalButton3.TabIndex = 10
+        Me.GimbalButton3.Text = "90, -25"
+        Me.GimbalButton3.UseVisualStyleBackColor = True
+        '
+        'GimbalButton4
+        '
+        Me.GimbalButton4.Location = New System.Drawing.Point(12, 247)
+        Me.GimbalButton4.Name = "GimbalButton4"
+        Me.GimbalButton4.Size = New System.Drawing.Size(75, 23)
+        Me.GimbalButton4.TabIndex = 11
+        Me.GimbalButton4.Text = "270, -25"
+        Me.GimbalButton4.UseVisualStyleBackColor = True
+        '
+        'HomeButton
+        '
+        Me.HomeButton.Location = New System.Drawing.Point(93, 160)
+        Me.HomeButton.Name = "HomeButton"
+        Me.HomeButton.Size = New System.Drawing.Size(75, 23)
+        Me.HomeButton.TabIndex = 12
+        Me.HomeButton.Text = "Home"
+        Me.HomeButton.UseVisualStyleBackColor = True
+        '
+        'VideoOnButton
+        '
+        Me.VideoOnButton.Location = New System.Drawing.Point(93, 189)
+        Me.VideoOnButton.Name = "VideoOnButton"
+        Me.VideoOnButton.Size = New System.Drawing.Size(75, 23)
+        Me.VideoOnButton.TabIndex = 13
+        Me.VideoOnButton.Text = "Video On"
+        Me.VideoOnButton.UseVisualStyleBackColor = True
+        '
+        'VideoOffButton
+        '
+        Me.VideoOffButton.Location = New System.Drawing.Point(93, 218)
+        Me.VideoOffButton.Name = "VideoOffButton"
+        Me.VideoOffButton.Size = New System.Drawing.Size(75, 23)
+        Me.VideoOffButton.TabIndex = 14
+        Me.VideoOffButton.Text = "Video Off"
+        Me.VideoOffButton.UseVisualStyleBackColor = True
+        '
+        'FFCButton
+        '
+        Me.FFCButton.Location = New System.Drawing.Point(93, 247)
+        Me.FFCButton.Name = "FFCButton"
+        Me.FFCButton.Size = New System.Drawing.Size(75, 23)
+        Me.FFCButton.TabIndex = 15
+        Me.FFCButton.Text = "FFC Adjust"
+        Me.FFCButton.UseVisualStyleBackColor = True
+        '
+        'ResetButton
+        '
+        Me.ResetButton.Location = New System.Drawing.Point(93, 276)
+        Me.ResetButton.Name = "ResetButton"
+        Me.ResetButton.Size = New System.Drawing.Size(75, 23)
+        Me.ResetButton.TabIndex = 16
+        Me.ResetButton.Text = "Reset"
+        Me.ResetButton.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(336, 334)
+        Me.Controls.Add(Me.ResetButton)
+        Me.Controls.Add(Me.FFCButton)
+        Me.Controls.Add(Me.VideoOffButton)
+        Me.Controls.Add(Me.VideoOnButton)
+        Me.Controls.Add(Me.HomeButton)
+        Me.Controls.Add(Me.GimbalButton4)
+        Me.Controls.Add(Me.GimbalButton3)
+        Me.Controls.Add(Me.GimbalButton2)
+        Me.Controls.Add(Me.GimbalButton1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RadioButton3)
         Me.Controls.Add(Me.RadioButton2)
@@ -140,4 +239,13 @@ Partial Class Form1
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents Label1 As Label
+    Friend WithEvents GimbalButton1 As Button
+    Friend WithEvents GimbalButton2 As Button
+    Friend WithEvents GimbalButton3 As Button
+    Friend WithEvents GimbalButton4 As Button
+    Friend WithEvents HomeButton As Button
+    Friend WithEvents VideoOnButton As Button
+    Friend WithEvents VideoOffButton As Button
+    Friend WithEvents FFCButton As Button
+    Friend WithEvents ResetButton As Button
 End Class
